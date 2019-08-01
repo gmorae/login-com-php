@@ -44,50 +44,37 @@
             </form>
         </div>
     </nav>
-    <div class="container mt-5">
-        <div class="text-center mb-5">
-            <h1>
-                Cadasre um novo usuário
-            </h1>
-        </div>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    <label for="cep">C.E.P</label>
-                    <input type="text" class="form-control" name="cep" id="cep" placeholder="C.E.P">
-                </div>
-                <div class="form-group col-md-9">
-                    <label for="rua">Endereço</label>
-                    <input type="text" class="form-control" name="rua" id="rua" placeholder="Endereço">
-                </div>
-            </div>
 
-            <div class="form-row">
-                <div class="form-group col-md-5">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro">
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="estado">Estado</label>
-                    <input type="text" class="form-control" name="uf" id="uf" placeholder="Estado">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-success">Cadastrar</button>
-        </form>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">
+            Usuários cadastrados
+        </h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Nome completo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark</td>
+                    <td>16</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>Jacob</td>
+                    <td>59</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>Larry</td>
+                    <td>13</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <script type="text/javascript" src="cep.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
