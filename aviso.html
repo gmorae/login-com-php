@@ -13,13 +13,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Administrador</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand">ADM</a>
+        <a class="navbar-brand" href="#">ADM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +36,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="usuario.html">Criar novo</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="visualizar.html">Visualizar </a>
+                        <a class="dropdown-item" href="visualizar.html">Vizualizar </a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -52,6 +50,7 @@
                         <a class="dropdown-item" href="visualizarAviso.html">Vizualizar </a>
                     </div>
                 </li>
+
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <a href="index.html">
@@ -60,52 +59,24 @@
             </form>
         </div>
     </nav>
-    <div class="container mt-5">
-        <div class="text-center mb-5">
-            <h1>
-                Cadastre um novo usuário
-            </h1>
-        </div>
-        <form method="POST" action="">
+    <div class="container">
+        <h1 class="text-center mb-5 mt-5">
+            Cadastre um novo evento
+        </h1>
+        <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+                    <label for="nome">Nome do evento</label>
+                    <input type="text" class="form-control" name="nomeEvento" id="nome" placeholder="Nome do evento">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    <label for="cep">C.E.P</label>
-                    <input type="text" class="form-control" name="cep" id="cep" placeholder="C.E.P">
-                </div>
-                <div class="form-group col-md-9">
-                    <label for="rua">Endereço</label>
-                    <input type="text" class="form-control" name="rua" id="rua" placeholder="Endereço">
-                </div>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-md-5">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro">
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="estado">Estado</label>
-                    <input type="text" class="form-control" name="uf" id="uf" placeholder="Estado">
+                    <label for="data">Data do evento</label>
+                    <input type="date" class="form-control" name="data" id="data" placeholder="Data do evento">
                 </div>
             </div>
             <button type="submit" class="btn btn-success">Cadastrar</button>
         </form>
     </div>
-    <script type="text/javascript" src="cep.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

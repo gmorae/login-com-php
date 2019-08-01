@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Administrador</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -36,7 +38,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="usuario.html">Criar novo</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="visualizar.html">Vizualizar </a>
+            <a class="dropdown-item" href="visualizar.html">Visualizar </a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -50,7 +52,6 @@
             <a class="dropdown-item" href="visualizarAviso.html">Vizualizar </a>
           </div>
         </li>
-
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <a href="index.html">
@@ -59,14 +60,47 @@
       </form>
     </div>
   </nav>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4 text-center">Olá, administrador</h1>
-      <p class="lead text-center">Seja bem-vindo!</p>
-    </div>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-5">
+      Eventos cadastrados
+    </h1>
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th scope="col">Nome do evento</th>
+          <th scope="col">Data</th>
+          <th scope="col">Confirmado</th>
+          <th scope="col">Talvez</th>
+          <th scope="col">Não vão</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>16</td>
+          <td>16</td>
+          <td>16</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Jacob</td>
+          <td>59</td>
+          <td>59</td>
+          <td>59</td>
+          <td>59</td>
+        </tr>
+        <tr>
+          <td>Larry</td>
+          <td>13</td>
+          <td>13</td>
+          <td>13</td>
+          <td>13</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <p class="lead text-center">Total de usuários cadastrados: </p>
-  <p class="lead text-center">Total de eventos cadastrados: </p>
+  <script type="text/javascript" src="cep.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
